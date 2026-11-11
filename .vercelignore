@@ -1,0 +1,5 @@
+.env*
+.git
+.vercel
+.gitignore
+.DS_Store
