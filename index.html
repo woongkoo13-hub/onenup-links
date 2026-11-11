@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>One눕 | 생활꿀템 레서판다</title>
+<meta name="description" content="아직도 귀찮은 거 두 번 해? 수고는 딱 한번☝🏼으로 족한다! 한 번 사면 계속 편한 생활 꿀템 모음">
+<meta property="og:title" content="One눕 | 생활꿀템 레서판다">
+<meta property="og:description" content="수고는 딱 한번☝🏼으로 족한다! 쇼츠에 나온 생활 꿀템 모아보기">
+<meta property="og:image" content="img/profile.jpg">
+<link rel="icon" href="img/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#FCD46F; --bg2:#FDE29A; --ink:#2b1d14; --sub:#6b4a2e; --accent:#D9541E; --card:#fffdf6; --line:#f0d78a; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:520px; margin:0 auto; padding:28px 16px 40px; }
+  header { text-align:center; }
+  .avatar { width:120px; height:120px; border-radius:50%; border:5px solid #fff; box-shadow:0 8px 24px rgba(120,70,0,.18); display:block; margin:0 auto 12px; }
+  h1 { font-family:"Black Han Sans",sans-serif; font-weight:400; font-size:44px; letter-spacing:-1px; line-height:1; }
+  h1 b { color:var(--accent); font-weight:400; }
+  .slogan { font-family:"Black Han Sans",sans-serif; font-size:21px; margin-top:10px; }
+  .slogan b { color:var(--accent); font-weight:400; }
+  .intro { font-size:15px; color:var(--sub); margin-top:8px; line-height:1.5; }
+  .channels { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:22px 0 10px; }
+  .ch { display:flex; align-items:center; gap:10px; background:var(--card); border-radius:16px; padding:13px 14px; text-decoration:none; color:var(--ink); font-weight:700; font-size:15px; box-shadow:0 3px 0 rgba(120,70,0,.12); transition:transform .1s; }
+  .ch:active { transform:translateY(2px); box-shadow:none; }
+  .ch .dot { width:34px; height:34px; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px; flex:none; }
+  .ch small { display:block; font-weight:500; color:var(--sub); font-size:12px; }
+  .yt .dot { background:#ff0033; } .ig .dot { background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); } .th .dot { background:#111; } .tt .dot { background:#111; }
+  .notice { background:rgba(255,255,255,.55); border-radius:12px; padding:10px 12px; font-size:12.5px; color:var(--sub); line-height:1.5; margin:14px 0 6px; }
+  h2 { font-family:"Black Han Sans",sans-serif; font-weight:400; font-size:26px; margin:26px 0 4px; display:flex; align-items:center; gap:8px; }
+  .hint { font-size:13.5px; color:var(--sub); margin-bottom:12px; }
+  .search { width:100%; font:inherit; font-size:16px; padding:12px 14px; border-radius:14px; border:2px solid var(--line); background:var(--card); margin-bottom:14px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .item { background:var(--card); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 3px 0 rgba(120,70,0,.12); }
+  .item .ph { position:relative; aspect-ratio:1/1; background:#fff; }
+  .item .ph img { width:100%; height:100%; object-fit:contain; display:block; }
+  .no { position:absolute; left:8px; top:8px; background:var(--ink); color:#fff; font-family:"Black Han Sans",sans-serif; font-size:15px; padding:3px 9px; border-radius:999px; }
+  .new { position:absolute; right:8px; top:8px; background:var(--accent); color:#fff; font-size:11px; font-weight:800; padding:3px 7px; border-radius:999px; }
+  .item .body { padding:10px 11px 12px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .item .t { font-weight:800; font-size:14px; line-height:1.35; }
+  .item .s { font-size:12px; color:var(--sub); line-height:1.35; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item a.buy { margin-top:auto; display:block; text-align:center; background:var(--ink); color:#fff; text-decoration:none; font-weight:800; font-size:14px; padding:10px; border-radius:12px; }
+  .item a.yt { font-size:12px; color:var(--sub); text-align:center; text-decoration:underline; }
+  .empty { grid-column:1/-1; text-align:center; background:var(--card); border-radius:18px; padding:26px 16px; color:var(--sub); }
+  .empty img { width:140px; display:block; margin:0 auto 8px; }
+  footer { text-align:center; margin-top:34px; font-size:12.5px; color:var(--sub); line-height:1.6; }
+  footer img { width:120px; display:block; margin:0 auto 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="avatar" src="img/profile.jpg" alt="One눕 레서판다">
+    <h1>One<b>눕</b></h1>
+    <p class="slogan">수고는 <b>딱 한번</b>☝🏼으로 족한다!</p>
+    <p class="intro">아직도 귀찮은 거 두 번 해? 😤<br>한 번 사 두면 계속 편한 생활 꿀템만 골라요.</p>
+  </header>
+
+  <nav class="channels">
+    <a class="ch yt" href="https://www.youtube.com/@onenup" target="_blank" rel="noopener"><span class="dot">▶</span><span>유튜브<small>@onenup</small></span></a>
+    <a class="ch ig" href="https://www.instagram.com/onenup.kr/" target="_blank" rel="noopener"><span class="dot">◎</span><span>인스타그램<small>@onenup.kr</small></span></a>
+    <a class="ch th" href="https://www.threads.com/@onenup.kr" target="_blank" rel="noopener"><span class="dot">@</span><span>쓰레드<small>@onenup.kr</small></span></a>
+    <a class="ch tt" href="https://www.tiktok.com/@onenup.kr" target="_blank" rel="noopener"><span class="dot">♪</span><span>틱톡<small>@onenup.kr</small></span></a>
+  </nav>
+
+  <h2>🛒 쇼츠에 나온 꿀템</h2>
+  <p class="hint">영상에 나온 <b>번호</b>로 찾아보세요. 새 꿀템이 맨 위에 올라와요.</p>
+  <input class="search" id="q" type="search" placeholder="번호나 이름으로 찾기 (예: 12, 보풀)" autocomplete="off">
+  <p class="notice">※ 이 페이지의 상품 링크는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 사는 사람의 가격은 똑같아요.</p>
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    <img src="img/pose01.jpg" alt="누워 있는 레서판다">
+    귀찮은 건 내가 대신 화내 줄게.<br>© One눕
+  </footer>
+</div>
+<script>
+const DATA_URL = window.DATA_URL || 'products.json';
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+let items = [];
+function render() {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const list = items.filter((p) => !q || String(p.no) === q.replace(/[^0-9]/g, '') || (p.title + ' ' + p.name + ' ' + (p.desc || '')).toLowerCase().includes(q));
+  const grid = document.getElementById('grid');
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty"><img src="img/pose06.jpg" alt="메롱 하는 레서판다">' + (items.length ? '찾는 꿀템이 없어요. 번호를 다시 확인해 주세요.' : '첫 꿀템을 준비하고 있어요.<br>곧 올라와요!') + '</div>';
+    return;
+  }
+  const week = Date.now() - 7 * 864e5;
+  grid.innerHTML = list.map((p) => `<div class="item" id="no${p.no}">
+    <div class="ph"><img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" referrerpolicy="no-referrer"><span class="no">${p.no}번</span>${p.date && Date.parse(p.date) > week ? '<span class="new">NEW</span>' : ''}</div>
+    <div class="body"><div class="t">${esc(p.title)}</div><div class="s">${esc(p.desc || p.name)}</div>
+    <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored noopener">쿠팡에서 보기</a>
+    ${p.video ? `<a class="yt" href="${esc(p.video)}" target="_blank" rel="noopener">영상 보기</a>` : ''}</div></div>`).join('');
+}
+document.getElementById('q').addEventListener('input', render);
+fetch(DATA_URL + (DATA_URL.includes('?') ? '&' : '?') + 't=' + Math.floor(Date.now() / 300000), { cache: 'no-store' })
+  .then((r) => r.json()).then((d) => { items = (d.items || []).sort((a, b) => b.no - a.no); render();
+    const m = location.hash.match(/^#?(\d+)$/); if (m) { document.getElementById('q').value = m[1]; render(); } })
+  .catch(() => render());
+</script>
+</body>
+</html>
