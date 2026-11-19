@@ -70,7 +70,7 @@
   <h2>🛒 쇼츠에 나온 꿀템</h2>
   <p class="hint">영상에 나온 <b>번호</b>로 찾아보세요. 새 꿀템이 맨 위에 올라와요.</p>
   <input class="search" id="q" type="search" placeholder="번호나 이름으로 찾기 (예: 12, 보풀)" autocomplete="off">
-  <p class="notice">※ 이 페이지의 상품 링크는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 사는 사람의 가격은 똑같아요.</p>
+  <p class="notice">※ 이 페이지의 상품 링크는 쿠팡 파트너스·네이버 쇼핑 커넥트 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 사는 사람의 가격은 똑같아요.</p>
   <div class="grid" id="grid"></div>
 
   <footer>
@@ -94,7 +94,7 @@ function render() {
   grid.innerHTML = list.map((p) => `<div class="item" id="no${p.no}">
     <div class="ph"><img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" referrerpolicy="no-referrer"><span class="no">${p.no}번</span>${p.date && Date.parse(p.date) > week ? '<span class="new">NEW</span>' : ''}</div>
     <div class="body"><div class="t">${esc(p.title)}</div><div class="s">${esc(p.desc || p.name)}</div>
-    <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored noopener">쿠팡에서 보기</a>
+    <a class="buy" href="${esc(p.link)}" target="_blank" rel="sponsored noopener">${p.shop === 'naver' ? '네이버에서 보기' : '쿠팡에서 보기'}</a>
     ${p.video ? `<a class="yt" href="${esc(p.video)}" target="_blank" rel="noopener">영상 보기</a>` : ''}</div></div>`).join('');
 }
 document.getElementById('q').addEventListener('input', render);
